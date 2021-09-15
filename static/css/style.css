@@ -1,7 +1,5 @@
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
  :root {
@@ -2839,13 +2837,13 @@
   }
   
   .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
+    color: #40bf40;
+    border-color: #40bf40;
   }
   
   .btn-outline-primary:hover {
     color: #fff;
-    background-color: #007bff;
+    background-color: #40bf40;
     border-color: #007bff;
   }
   
@@ -2854,15 +2852,15 @@
   }
   
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #007bff;
+    color: #40bf40;
     background-color: transparent;
   }
   
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #40bf40;
+    border-color: #40bf40;
   }
   
   .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
