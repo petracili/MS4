@@ -80,19 +80,19 @@
               <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
       <li class="list-inline-item">
-        <a href="{% if grad_total %}text-info font-wight-bold{% else %}text-black{% endif %} nav-link" hreflang="">
-          <div class="text-center">
-            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-            <p class="my-0">
-              {% if grand_total %}
-                  ${{ grand_total|floatformat:2 }}
-              {% else %}
-                  €0.00
-              {% endif %}
-            </p>
-          </div>
-        </a>
-      </li>      
+            <a href="{% if grad_total %}text-info font-wight-bold{% else %}text-black{% endif %} nav-link" hreflang="">
+              <div class="text-center">
+                  <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                      <p class="my-0">
+                              {% if grand_total %}
+                                  ${{ grand_total|floatformat:2 }}
+                              {% else %}
+                                  €0.00
+                              {% endif %}
+                      </p>
+                </div>
+            </a>
+       </li>      
       </div>
     </div>
   </nav>
@@ -108,7 +108,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" img="templates/home/media/vrt1.PNG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
         <div class="container">
           <div class="carousel-caption text-left">
             <h1>Marcus Tullius Cicero</h1>
@@ -118,7 +118,7 @@
         </div>
       </div>
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" img="templates/home/media/vrt1.PNG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
         <div class="container">
           <div class="carousel-caption">
             <h1>Another example headline.</h1>
@@ -128,7 +128,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" img="templates/home/media/vrt1.PNG" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
         <div class="container">
           <div class="carousel-caption text-right">
             <h1>One more for good measure.</h1>
