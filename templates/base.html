@@ -59,13 +59,12 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#aboutus">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#aboutus">Home<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#plantstore">Plants Store</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link disabled" href="#gardenstore" tabindex="-1" id="all-products-link" data-toggle="dropdown" aria-haspopus="true" aria-expanded="false" aria-disabled="true">Garden Stories</a>
             <div class="dropdown-menu boredr-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item">By Products</a>
@@ -123,7 +122,7 @@
       <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" id="aboutus">
       <div class="carousel-item">
         <img src="{% static 'img/vrt1.PNG' %}" />
         <div class="container">
@@ -163,9 +162,7 @@
     </a>
   </div>
 
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <!-- Marketing messaging and featurettes-->
 
   <div class="container marketing">
 
@@ -175,7 +172,7 @@
 
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <h2 class="featurette-heading">Look at this.<span class="text-muted">If you have an idea for vegetables.</span></h2>
         <p class="lead"> Spices, vegetables and fruits can be grown all year round, and it will be easiest for those who have large balconies and courtyards,
            but we should not give up even if we are limited by space. It is always good to start with simpler plant species - try to grow herbs from seed 
           (we suggest mint, chives and basil for simplicity), and if you buy seedlings, look for them in home production at various family farms.
@@ -191,7 +188,7 @@
 
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">  <span class="text-muted">See for yourself.</span></h2>
+        <h2 class="featurette-heading">See for yuorself.<span class="text-muted">Maybe this is a better idea for your garden.</span></h2>
         <p class="lead">It all started about 3-5 years ago. We know that plants were very popular in the 70s and 80s, so part of the popularity may have come with trends in interior design in the style of some past decades.
           The second part is certainly related to life in urban areas where we lack greenery, so the so-called. the urban jungle has become a way to reconnect with nature. Healthy living, focusing on mental health, 
           caring for the environment, recycling - these are all terms we associate with plants. Countless studies are showing how useful it is 
@@ -217,23 +214,23 @@
 
      <!-- /END THE FEATURETTES -->
 
-    <hr class="featurette-divider" id="gardenstore">
+    <hr class="featurette-divider" id="plantstore">
 
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{% static 'img/kaktus.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />
         <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p> These are mostly prickly perennials that withstand drought well thanks to their juicy and fleshy constituent tissue. The name succulent refers to any plant of succulent tissue of stems and leaves, and often roots, which retains moisture and allows the plant to develop normally during periods of dry weather.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{% static 'img/kaktus.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />        
         <h2>Heading</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{% static 'img/kaktus.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />       
         <h2>Heading</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
@@ -242,19 +239,19 @@
 
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{% static 'img/kaktus.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />     
         <h2>Heading</h2>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{% static 'img/kaktus.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />       
         <h2>Heading</h2>
         <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <img src="{% static 'img/kaktus.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />        
         <h2>Heading</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
