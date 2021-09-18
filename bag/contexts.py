@@ -1,7 +1,7 @@
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
-from plants.models import plants
+from plants.models import Plants
 
 def bag_contents(request):
 
@@ -11,7 +11,7 @@ def bag_contents(request):
     bag = request.session.get('bag', {})
 
     for item_id, quantity in bag.items():
-        plants = get_object_or_404(plants, pk=item_id)
+        plants = get_object_or_404(Plants, pk=item_id)
         total += quantity * plants.price
         product_count += quantity
         bag_items.append({

@@ -59,10 +59,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#aboutus">Home<span class="sr-only"></span></a>
+            <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#plantstore">Plants Store</a>
+            <a class="nav-link" href="{% url 'plants' %}">Plants Store</a>
           </li>
           <li class="nav-item" >
             <div class="dropdown-menu boredr-0" aria-labelledby="all-products-link">
@@ -89,7 +89,7 @@
                   <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
               {% endif %}
             <li class="list-inline-item">
-              <a href="{% if grad_total %}text-info font-wight-bold{% else %}text-black{% endif %} nav-link" hreflang="">
+              <a class="{% if grand_total %}text-info font-wight-bold{% else %}text-black{% endif %} nav-link"  href="{% url 'view_bag' %}" hreflang="">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                         <p class="my-0">
@@ -115,7 +115,6 @@
   </header>
 
 <main role="main" class="container-fluid" id="aboutus">
-{% block content2%}
   <div id="myCarousel" class="carousel slide pointer-event" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class=""></li>
@@ -165,7 +164,7 @@
   <!-- Marketing messaging and featurettes-->
 
   <div class="container marketing">
-
+    {% block marketing%}
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
@@ -213,64 +212,66 @@
     </div>
 
      <!-- /END THE FEATURETTES -->
-
+     {% endblock marketing%}
     <hr class="featurette-divider" id="plantstore">
+    {% block planstore %}
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{% static 'img/kaktus1.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />
+          <h2>Cactus</h2>
+          <p> These are mostly prickly perennials that withstand drought well thanks to their juicy and fleshy constituent tissue. The name succulent refers to any plant of succulent tissue of stems and leaves, and often roots, which retains moisture and allows the plant to develop normally during periods of dry weather.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="{% static 'img/cuvarkuca.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />        
+          <h2>Sempervivum tectorum</h2>
+          <p>It grows in the mountains of western, central and southern Europe. There are also a large number of cultivated traits, and it has been grown as an ornamental plant for about 200 years. It is medicinal and the young leaves are edible.
+            The Sempervivum tectorum originally grew in southern European rocky areas, and its distribution was due to Charlemagne, who considered it medicinal and ordered it to be planted for its healing properties so that the plant spread throughout Europe.
+            The flower stalk, which grows 10 to 30 centimetres, is covered with small fleshy pointed leaves at the top, which are said to be medicinal. The leaves are collected from the beginning of March to the end of October, and by pressing them the juice (Sempervivi tectori succus) is obtained.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="{% static 'img/ljubicica.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />       
+          <h2>Streptocarpus sect. Saintpaulia</h2>
+          <p>Streptocarpus sect. Saintpaulia is a section within Streptocarpus subgenus Streptocarpella[1] consisting of about ten species of herbaceous perennial flowering plants in the family Gesneriaceae, native to Tanzania and adjacent southeastern Kenya in eastern tropical Africa. The section was previously treated as a separate genus, Saintpaulia, but molecular phylogenetic studies showed that it was nested within the genus Streptocarpus.
+            Species and cultivars are commonly called African violets (although they are not closely related to true violets) or saintpaulias. They are commonly used as indoor houseplants, but can also be kept as outdoor plants in certain climates.
+            Several of the species and subspecies of the section are endangered, and many more are threatened, as their native cloud forest habitats are cleared for agriculture. The conservation status of Streptocarpus ionanthus has been classed as near-threatened.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="{% static 'img/kaktus1.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />
-        <h2>Cactus</h2>
-        <p> These are mostly prickly perennials that withstand drought well thanks to their juicy and fleshy constituent tissue. The name succulent refers to any plant of succulent tissue of stems and leaves, and often roots, which retains moisture and allows the plant to develop normally during periods of dry weather.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="{% static 'img/cuvarkuca.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />        
-        <h2>Sempervivum tectorum</h2>
-        <p>It grows in the mountains of western, central and southern Europe. There are also a large number of cultivated traits, and it has been grown as an ornamental plant for about 200 years. It is medicinal and the young leaves are edible.
-          The Sempervivum tectorum originally grew in southern European rocky areas, and its distribution was due to Charlemagne, who considered it medicinal and ordered it to be planted for its healing properties so that the plant spread throughout Europe.
-          The flower stalk, which grows 10 to 30 centimetres, is covered with small fleshy pointed leaves at the top, which are said to be medicinal. The leaves are collected from the beginning of March to the end of October, and by pressing them the juice (Sempervivi tectori succus) is obtained.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="{% static 'img/ljubicica.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />       
-        <h2>Streptocarpus sect. Saintpaulia</h2>
-        <p>Streptocarpus sect. Saintpaulia is a section within Streptocarpus subgenus Streptocarpella[1] consisting of about ten species of herbaceous perennial flowering plants in the family Gesneriaceae, native to Tanzania and adjacent southeastern Kenya in eastern tropical Africa. The section was previously treated as a separate genus, Saintpaulia, but molecular phylogenetic studies showed that it was nested within the genus Streptocarpus.
-          Species and cultivars are commonly called African violets (although they are not closely related to true violets) or saintpaulias. They are commonly used as indoor houseplants, but can also be kept as outdoor plants in certain climates.
-          Several of the species and subspecies of the section are endangered, and many more are threatened, as their native cloud forest habitats are cleared for agriculture. The conservation status of Streptocarpus ionanthus has been classed as near-threatened.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="{% static 'img/brsljan.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />     
-        <h2>Hedera</h2>
-        <p>Plant genus from the family Araliaceae to which 17 species [1] of evergreen shrubby climbers belong. There are only one species of Hedera helix in Croatia, which originates from Western Europe, from where it has spread to the rest of Europe, and still around the world.
-          It is common along the walls of houses and on abandoned buildings, on which it climbs and spreads quickly. If there is nothing to climb on, it crawls on the ground. It is often planted as an ornamental plant. Ivy is said to live to be a thousand years old.
-          The name of the genus Hedera comes from the Greek heather (= seat, base, ground) because it is firmly attached to the ground by the root.
-          Ivy is a poisonous, but also a medicinal plant. It can grow up to twenty meters and climbing up the trees, it reaches a height of up to 30 meters. Its leaves are leathery, shiny, very diverse in shape. The flowers are yellowish-green, poisonous, up to 5 mm. in the prairie. The fruit is a black bean, ripens in spring, and is 8 to 20 mm in diameter.
-          It was a favourite ornamental plant of the ancient Romans.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="{% static 'img/drvoz.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />       
-        <h2>Dracaena fragrans</h2>
-        <p> Dracaena fragrans is a slow growing shrub, usually multistemmed at the base, mature specimens reaching 15 m (49 ft) or more tall with a narrow crown of usually slender erect branches. Stems may reach up to 30 cm (12 in) diameter on old plants; in forest habitats they may become horizontal with erect side branches. 
-          Young plants have a single unbranched stem with a rosette of leaves until the growing tip flowers or is damaged, after which it branches,
-          producing two or more new stems; thereafter, branching increases with subsequent flowering episodes.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="{% static 'img/begonia.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />        
-        <h2>Begonia rex</h2>
-        <p>Begonia rex, the king begonia, is a species of flowering plant in the family Begoniaceae. It is found from Arunachal Pradesh to southeast China, and has been introduced to Bangladesh, Cuba, and Hispaniola.It is a parent to over 500 cultivars in the Begonia Rex Cultorum Group of houseplants. Other parents in the multitude of crosses made during the creation of the Group include Begonia annulata, B. cathayana, B. decora, B. diadema, B. dregei, B. grandis, B. hatacoa, B. palmata, and B. xanthina.[3]</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="{% static 'img/brsljan.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />     
+          <h2>Hedera</h2>
+          <p>Plant genus from the family Araliaceae to which 17 species [1] of evergreen shrubby climbers belong. There are only one species of Hedera helix in Croatia, which originates from Western Europe, from where it has spread to the rest of Europe, and still around the world.
+            It is common along the walls of houses and on abandoned buildings, on which it climbs and spreads quickly. If there is nothing to climb on, it crawls on the ground. It is often planted as an ornamental plant. Ivy is said to live to be a thousand years old.
+            The name of the genus Hedera comes from the Greek heather (= seat, base, ground) because it is firmly attached to the ground by the root.
+            Ivy is a poisonous, but also a medicinal plant. It can grow up to twenty meters and climbing up the trees, it reaches a height of up to 30 meters. Its leaves are leathery, shiny, very diverse in shape. The flowers are yellowish-green, poisonous, up to 5 mm. in the prairie. The fruit is a black bean, ripens in spring, and is 8 to 20 mm in diameter.
+            It was a favourite ornamental plant of the ancient Romans.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="{% static 'img/drvoz.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />       
+          <h2>Dracaena fragrans</h2>
+          <p> Dracaena fragrans is a slow growing shrub, usually multistemmed at the base, mature specimens reaching 15 m (49 ft) or more tall with a narrow crown of usually slender erect branches. Stems may reach up to 30 cm (12 in) diameter on old plants; in forest habitats they may become horizontal with erect side branches. 
+            Young plants have a single unbranched stem with a rosette of leaves until the growing tip flowers or is damaged, after which it branches,
+            producing two or more new stems; thereafter, branching increases with subsequent flowering episodes.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="{% static 'img/begonia.PNG' %}" class="bd-placeholder-img rounded-circle" width="140" height="140" />        
+          <h2>Begonia rex</h2>
+          <p>Begonia rex, the king begonia, is a species of flowering plant in the family Begoniaceae. It is found from Arunachal Pradesh to southeast China, and has been introduced to Bangladesh, Cuba, and Hispaniola.It is a parent to over 500 cultivars in the Begonia Rex Cultorum Group of houseplants. Other parents in the multitude of crosses made during the creation of the Group include Begonia annulata, B. cathayana, B. decora, B. diadema, B. dregei, B. grandis, B. hatacoa, B. palmata, and B. xanthina.[3]</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    {% endblock planstore %}
+    {% block plantbag %}
+    {% endblock plantbag %}
   </div><!-- /.container -->
 
-  {% endblock %}
+
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>

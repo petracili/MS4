@@ -14,21 +14,22 @@ def view_bag(request):
 def add_to_bag(request, plants_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    plants = get_object_or_404(plants, pk=plants_id)
-    quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
+    plants = get_object_or_404(Plants, pk=plants_id)
+    quantity = 1
+    redirect_url = 'plants'
 
     bag = request.session.get('bag', {})
 
     if plants_id in list(bag.keys()):
         bag[plants_id] += quantity
         messages.success(
-            request, f'{plants.title} has been added to your plants bag again')
+            request, f'{plants.name} has been added to your plants bag again')
     else:
         bag[plants_id] = quantity
-        messages.success(request, f'Added {plants.title} to your plants bag')
+        messages.success(request, f'Added {plants.name} to your plants bag')
 
     request.session['bag'] = bag
+    print('bag contents:', bag)
     return redirect(redirect_url)
 
 
