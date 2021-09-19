@@ -41,3 +41,9 @@ This site provides an array of plants which can be searched, viewed by standard 
 * As a new site user, I want to be able to make a purchase without needing to create a profile
 * As a new site user, I want to be able to be able to easily create a profile
 * As a new site user, I want to be able to be able to be able to amend the items in my bag including quantities and removing them entirely
+
+### **Returning user's goals**
+* As a returning site user, I want to be able to log in and out
+* As a returning site user, I want to be able to recover a forgotten password
+* As a returning site user, I want to be able to have a personalised profile
+* As a returning site user, I want to be able to view my past orders
