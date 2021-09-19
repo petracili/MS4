@@ -87,3 +87,11 @@ This site provides an array of plants which can be searched, viewed by standard 
 Please click the below link to view the wireframe mock up of the website in mobile, tablet and desktop sizing
 
 [Wireframe](/wireframe/)
+
+
+## <a name="surface"></a> Surface
+The intention of the website is to be whimsycal 
+
+* The font family chosen is 'Segoe UI' as this has a whimsycal touch, close to a typewriter style text whilst also being clear and easy to read
+* The colour scheme selected is a shade of green with a consistant cover image throughout the site.
+* The cover image was selected as it shows the site is all about plants whilst also providing some clear space for text and not being too distracting as a cover image with content over the top of it
