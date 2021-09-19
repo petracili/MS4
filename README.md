@@ -231,3 +231,11 @@ An error occured when attempting to deploy the site in Heroku jango.core.excepti
 1. Click 'Save'
 1. Click the URL created within the Settings - GitHub Pages section
 
+**To clone the repository for local deployment:** 
+1. On the main page of the repository, click the down arrow Code button
+1. Click the download icon under the relevant section to clone with either HTTPS, SSH or GitHub CLI 
+1. In Git Bash, change the current directory to the location you want the directory to be stored
+1. Type git clone and then paste the URL you copied in step 2
+    1. An example for HTTPS: `https://github.com/petracili/MS4.git`
+1. Press enter - that's it, your clone has been completed! 
+
