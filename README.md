@@ -282,3 +282,9 @@ AWS_SECRET_ACCESS_KEY | 'AWS_SECRET_ACCESS_KEY'
 11. Under **Manual deploy**, select **master** and click **Deploy Branch**
 12. Once the app has finished building, click **Open app** from the header row of the dashboard
 
+## <a name="acks"></a> Acknowledgements
+* Ed Bradley - I also used this readme as an example of how to deploy Heroku
+    * https://github.com/Edb83/self-isolution
+
+* My mentor Antonio Rodriguez who has provided me with guidance and support through the project
+
