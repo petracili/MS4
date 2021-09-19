@@ -278,3 +278,7 @@ AWS_SECRET_ACCESS_KEY | 'AWS_SECRET_ACCESS_KEY'
 |STRIPE_WH_SECRET|'STRIPE_WH_SECRET'|
 |USE_AWS|True|
 
+10. Go back to the **Deploy** tab and under **Automatic deploys** choose **Enable Automatic Deploys**
+11. Under **Manual deploy**, select **master** and click **Deploy Branch**
+12. Once the app has finished building, click **Open app** from the header row of the dashboard
+
