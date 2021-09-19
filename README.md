@@ -120,3 +120,26 @@ Bug | Fix
 was unable to load models with multiple genres for an individual plant | Although I was unable to resolve this issue, a fix was to change this so that each plant only had one genre attached to it
 An error occured when attempting to deploy the site in Heroku jango.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting | I added STATIC_ROOT to settings.py to solve the collect static error when deploying to Heroku
 
+# <a name="tech"></a> Technologies Used
+* [Bootstrap](https://getbootstrap.com/) 
+* JavaScript
+* https://fonts.google.com/
+* www.validator.w3.org
+* http://www.css-validator.org/
+* Git
+* Gitpod
+* GitHub
+* Google Chrome
+* http://www.responsinator.com/
+* Chrome Dev Tools
+* Python
+* Django
+* Heroku
+* Google Maps Marker Clusterer
+* [FontAwesome](https://fontawesome.com/) - for the icons used
+* [W3Schools Online Web Tutorials](https://www.w3schools.com) - for easier handling of codes
+* [Animate.css](https://animate.style/) - for animating element on the landing page 
+* [Google Fonts:](https://fonts.google.com/) - for font on webpage
+* [HTML Color Codes:](https://htmlcolorcodes.com/) - for color codes and names
+* Code Institute - for reminder of how the element is used
+* [Grammarly](https://www.grammarly.com) - to correct grammar
