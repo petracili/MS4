@@ -95,3 +95,14 @@ The intention of the website is to be whimsycal
 * The font family chosen is 'Segoe UI' as this has a whimsycal touch, close to a typewriter style text whilst also being clear and easy to read
 * The colour scheme selected is a shade of green with a consistant cover image throughout the site.
 * The cover image was selected as it shows the site is all about plants whilst also providing some clear space for text and not being too distracting as a cover image with content over the top of it
+
+# <a name="features"></a> Features
+## <a name="existing-features"></a> Existing Features
+Feature | Details
+--------|--------
+Log in | The user can register and log into their own account with personalised features
+Log out | There is a log out functionality on the page - this is especially important for users of a shared device
+Add plants | Superusers can add plants to the site 
+Edit plants | Superusers are able to edit plants
+Delete plants | Superusers are able to delete plants
+Search function | The users are able to search the book database. This function is available whether a user is logged in/registered or not
