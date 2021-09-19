@@ -71,3 +71,14 @@ This site provides an array of plants which can be searched, viewed by standard 
 ### For usability
 * For links to be clear and for the page to be constructed in a way which is instructive enabling the user to instinctively navigate the page
 
+## <a name="structure"></a> Structure
+**Interaction design:**
+* User friendly interface to ensure usability and to encourage the user to return
+* Responsive and visible links which change on hover to provide user feedback as they navigate the site
+
+**Information Architecture:**
+* Navigation bar at the top of the page
+* Responsive navigation bar - adjusting for mobile for ease of use
+* Responsive images to ensure they fit within the designated spaces, no matter what device is being used or the size of the screen
+* All features appropriate size and responsive for mobile and desktop viewing
+* All information is appropriate and relative to the subject and not misleading or hard to find
