@@ -143,3 +143,25 @@ An error occured when attempting to deploy the site in Heroku jango.core.excepti
 * [HTML Color Codes:](https://htmlcolorcodes.com/) - for color codes and names
 * Code Institute - for reminder of how the element is used
 * [Grammarly](https://www.grammarly.com) - to correct grammar
+
+# <a name="testing"></a> Testing
+### **New site user testing:**
+# <a name="testing"></a> Testing
+### **New site user testing:**
+* As a new site user, I want to be able to browse and search for plants
+    1. Upon entering the site, users are automatically greeted with the page title and sub navigation bar
+    1. There is a clear call to action to browse the plants
+* As a new site user, I want to be able to view the details of individual plant
+    1. Each plant can be opened in an individual page with more information available than on the main page
+* As a new site user, I want to be able to understand the intent of the page
+    1. Upon entering the page, it is clear the site is designed around plants. The main cover image shows a stack of plants and all links are clear and plant related
+* As a new site user, I want I want to understand easily how to navigate the page and access the facilities provided
+    1. The navigation bar has clear and easy to understand links
+* As a new site user, I want to be able to make a purchase without needing to create a profile
+    1. A user can checkout without the need to create a profile
+* As a new site user, I want to be able to be able to easily create a profile
+    1. A user can create a profile using the link in the nav bar
+* As a new site user, I want to be able to be able to sort products on a page
+    1. On the nav bar, there is a drop down box which allows the user to select specific genres
+* As a new site user, I want to be able to be able to amend the items in my bag including quantities and removing them entirely
+    1. The shopping bag has amend and delete buttons and the ability to increase the quantity
