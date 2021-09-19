@@ -67,3 +67,7 @@ This site provides an array of plants which can be searched, viewed by standard 
 #### To ensure the site is visually appealing and to draw the user's eye:
 * Images of plants
 * Clear soft colours intending to draw the user into the site and to be soft on the eye whilst not detracting from or make the text unreadable
+
+### For usability
+* For links to be clear and for the page to be constructed in a way which is instructive enabling the user to instinctively navigate the page
+
