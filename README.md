@@ -82,3 +82,8 @@ This site provides an array of plants which can be searched, viewed by standard 
 * Responsive images to ensure they fit within the designated spaces, no matter what device is being used or the size of the screen
 * All features appropriate size and responsive for mobile and desktop viewing
 * All information is appropriate and relative to the subject and not misleading or hard to find
+
+## <a name="skeleton"></a> Skeleton
+Please click the below link to view the wireframe mock up of the website in mobile, tablet and desktop sizing
+
+[Wireframe](/wireframe/)
