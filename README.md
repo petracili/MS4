@@ -105,4 +105,11 @@ Log out | There is a log out functionality on the page - this is especially impo
 Add plants | Superusers can add plants to the site 
 Edit plants | Superusers are able to edit plants
 Delete plants | Superusers are able to delete plants
-Search function | The users are able to search the book database. This function is available whether a user is logged in/registered or not
+Search function | The users are able to search the plant database. This function is available whether a user is logged in/registered or not
+
+## <a name="left-to"></a> Features left to implement
+Feature | Details
+--------|--------
+Multipe genres per plant | The fixtures were set up to enable the use of mutiple genres however, due to issues in loading this data to the heroku database, the items needed to have only one genre
+A filter for sale items | The fixtures were set up with a plants field showing if the item was on sale or not to enable items to be filtered by whether they are on sale
+A facility to save 'favourited' plants | Links on each book page allowing a user to save plants to their favourite list within their profile
