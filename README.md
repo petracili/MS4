@@ -217,4 +217,17 @@ An error occured when attempting to deploy the site in Heroku jango.core.excepti
     1. Results: The payment fails and the user is returned to the checkout page. The appropriate error message appears
 1. Tested the profile page and that the orders placed above show correctly
 	1. Results: The two successful orders made during testing appeared on the right hand side of the screen
-    
+
+# <a name="deployment"></a> Deployment
+## <a name="github"></a> Github Pages
+1. Create a new repository or access an existing repository
+1. Click the green Gitpod button to launch the project in Gitpod
+1. Create an index.html file
+1. Add the file to the staging area using the git add Functional
+1. Commit the file using the git commit function, adding an appropriate commentary
+1. Push the file to GitHub using the git commit and git push functions
+1. Refresh your GitHub repository and click the 'Settings' tab
+1. Scroll to the GitHub Pages section and select a publishing source
+1. Click 'Save'
+1. Click the URL created within the Settings - GitHub Pages section
+
