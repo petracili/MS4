@@ -62,3 +62,8 @@ This site provides an array of plants which can be searched, viewed by standard 
 * Function to edit a plants
 * Function to delete a plants
 * For the plants to be only editable by a superuser
+
+**Content requirements:**
+#### To ensure the site is visually appealing and to draw the user's eye:
+* Images of plants
+* Clear soft colours intending to draw the user into the site and to be soft on the eye whilst not detracting from or make the text unreadable
