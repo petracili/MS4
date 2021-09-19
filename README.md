@@ -255,3 +255,26 @@ To deploy the app to Heroku from its [GitHub repository](https://github.com/petr
 pip3 freeze --local > requirements.txt
 echo web: python app.py > Procfile
 ```
+
+2. **Push** these files to GitHub
+3. **Log In** to [Heroku](https://id.heroku.com/login)
+4. Select **Create new app** from the dropdown in the Heroku dashboard
+5. Choose a unique name ('recipe-nation') for the app and the location nearest to you
+6. Go to the **Deploy** tab and under **Deployment method** choose GitHub
+7. In **Connect to GitHub** enter your GitHub repository details and once found, click **Connect**
+8. Go to the **Settings** tab and under **Config Vars** choose **Reveal Config Vars**
+9. Enter the following keys and values, which must match those in the settings.py file:
+
+|**Key**|**Value**|
+|:-----|:-----|
+AWS_ACCESS_KEY_ID|'AWS_ACCESS_KEY_ID'
+AWS_SECRET_ACCESS_KEY | 'AWS_SECRET_ACCESS_KEY'
+|DATABASE_URL|'DATABASE_URL'|
+|EMAIL_HOST_PASS|'EMAIL_HOST_PASS'|
+|EMAIL_HOST_USER|'EMAIL_HOST_USER'|
+|SECRET_KEY|'SECRET_KEY'|
+|STRIPE_PUBLIC_KEY|'STRIPE_PUBLIC_KEY'|
+|STRIPE_SECRET_KEY|'STRIPE_SECRET_KEY'|
+|STRIPE_WH_SECRET|'STRIPE_WH_SECRET'|
+|USE_AWS|True|
+
