@@ -50,4 +50,9 @@ This site provides an array of plants which can be searched, viewed by standard 
 
 ### **Site owner'as goals:**
 * As a site owner, I want to be able to create, edit and delete plants
-* As a site owner, I want to the ability to create, edit and delete plants to be limited to superusers
+* As a site owner, I want to the ability to create, edit and delete plants to be limited to 
+
+## <a name="scope"></a> Scope
+**Functional requirements:**
+#### For ease of use:
+* Navigation bar which is simple and easy to navigate
