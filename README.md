@@ -112,4 +112,11 @@ Feature | Details
 --------|--------
 Multipe genres per plant | The fixtures were set up to enable the use of mutiple genres however, due to issues in loading this data to the heroku database, the items needed to have only one genre
 A filter for sale items | The fixtures were set up with a plants field showing if the item was on sale or not to enable items to be filtered by whether they are on sale
-A facility to save 'favourited' plants | Links on each book page allowing a user to save plants to their favourite list within their profile
+A facility to save 'favourited' plants | Links on each plant page allowing a user to save plants to their favourite list within their profile
+
+# <a name="bugs"></a> Bugs
+Bug | Fix
+--------|--------
+was unable to load models with multiple genres for an individual plant | Although I was unable to resolve this issue, a fix was to change this so that each plant only had one genre attached to it
+An error occured when attempting to deploy the site in Heroku jango.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting | I added STATIC_ROOT to settings.py to solve the collect static error when deploying to Heroku
+
