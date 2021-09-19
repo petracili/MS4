@@ -239,3 +239,19 @@ An error occured when attempting to deploy the site in Heroku jango.core.excepti
     1. An example for HTTPS: `https://github.com/petracili/MS4.git`
 1. Press enter - that's it, your clone has been completed! 
 
+
+**To fork the repository:**
+1. Navigate to the main page of the repository you wish to fork
+1. Click the Fork button on the top right hand side of the page
+
+## <a name="heroku"></a> Heroku
+### How to deploy to Heroku
+
+To deploy the app to Heroku from its [GitHub repository](https://github.com/petracili/MS4.git), the following steps were taken:
+
+1. From the GitPod terminal, create **requirements.txt** and **Procfile** using these commands:
+
+```console
+pip3 freeze --local > requirements.txt
+echo web: python app.py > Procfile
+```
