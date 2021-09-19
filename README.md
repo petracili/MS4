@@ -47,3 +47,7 @@ This site provides an array of plants which can be searched, viewed by standard 
 * As a returning site user, I want to be able to recover a forgotten password
 * As a returning site user, I want to be able to have a personalised profile
 * As a returning site user, I want to be able to view my past orders
+
+### **Site owner'as goals:**
+* As a site owner, I want to be able to create, edit and delete plants
+* As a site owner, I want to the ability to create, edit and delete plants to be limited to superusers
