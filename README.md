@@ -56,3 +56,9 @@ This site provides an array of plants which can be searched, viewed by standard 
 **Functional requirements:**
 #### For ease of use:
 * Navigation bar which is simple and easy to navigate
+
+#### To ensure the database is up to date and editable:
+* Function to add a plants
+* Function to edit a plants
+* Function to delete a plants
+* For the plants to be only editable by a superuser
