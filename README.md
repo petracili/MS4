@@ -165,3 +165,15 @@ An error occured when attempting to deploy the site in Heroku jango.core.excepti
     1. On the nav bar, there is a drop down box which allows the user to select specific genres
 * As a new site user, I want to be able to be able to amend the items in my bag including quantities and removing them entirely
     1. The shopping bag has amend and delete buttons and the ability to increase the quantity
+
+### **Returning user testing**
+* As a returning site user, I want to be able to log in and out
+    1. Upon entering the site, there is the option in the nav bar to register and log in
+* As a returning site user, I want to be able to recover a forgotten password
+    1. By using the Django all auth packages, this facility is available to users with a profile
+* As a returning site user, I want to be able to have a personalised profile
+    1. Users have a profile within which they can update their personal details
+* As a returning site user, I want to be able to view my past orders
+    1.  Within the profile page, there is a list of past orders 
+    1. users can click on these orders to view the full details
+
